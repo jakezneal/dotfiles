@@ -5,3 +5,6 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Install the Solarized Dark theme for iTerm
 open "${HOME}/iTerm2-Color-Schemes/schemes/Solarized Dark.itermcolors"
+
+# Copy Atom config file
+cp init/config.cson ~/.atom
