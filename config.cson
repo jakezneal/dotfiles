@@ -1,0 +1,33 @@
+"*":
+  "autoclose-html":
+    makNeverCloseeSelfClosing: false
+  core:
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".DS_Store"
+    ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "no"
+  docblockr: {}
+  editor:
+    invisibles: {}
+    softTabs: false
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "91929efb-19e6-3091-8b6e-0aa0771cd8f4"
+  linter: {}
+  minimap: {}
+  pigments: {}
+  tabs:
+    usePreviewTabs: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
