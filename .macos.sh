@@ -330,7 +330,7 @@ defaults write com.apple.Safari ShowSidebarInTopSites -bool false
 defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
 # Remove useless icons from Safari’s bookmarks bar
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+defaults write com.apple.Safari ProxiesInBookmarksBar ""
 
 # Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
@@ -339,6 +339,28 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 # Enable “Do Not Track”
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+
+# Don't autofill sensitive data
+defaults write ~/Library/Preferences/com.apple.Safari AutoFillCreditCardData -bool false
+defaults write ~/Library/Preferences/com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write ~/Library/Preferences/com.apple.Safari AutoFillMiscellaneousForms -bool false
+defaults write ~/Library/Preferences/com.apple.Safari AutoFillPasswords -bool false
+
+# Don't automatically open files
+defaults write ~/Library/Preferences/com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Enable warnings when visiting fraudulent websites
+defaults write ~/Library/Preferences/com.apple.Safari WarnAboutFraudulentWebsites -bool true
+
+# Block pop-ups
+defaults write ~/Library/Preferences/com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
+defaults write ~/Library/Preferences/com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
+
+# Treat SHA-1 certificates as insecure
+defaults write ~/Library/Preferences/com.apple.Safari TreatSHA1CertificatesAsInsecure -bool true
+
+# Disable PDF viewing
+defaults write ~/Library/Preferences/com.apple.Safari WebKitOmitPDFSupport -bool true
 
 ###############################################################################
 # Time Machine                                                                #
