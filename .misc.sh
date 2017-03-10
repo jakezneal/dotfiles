@@ -1,4 +1,4 @@
-# Clone git repos
+# Clone git repos & install misc tools
 
 # iTerm colour schemes
 # {iterm2colorschemes.com}

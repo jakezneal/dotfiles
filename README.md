@@ -30,9 +30,9 @@ bash .npm.sh
 bash .mkdir.sh
 ```
 
-#### Clone some GitHub repositories
+#### Clone some GitHub repositories and install misc tools
 ```sh
-bash .gitrepos.sh
+bash .misc.sh
 ```
 
 #### Finally, set some sensible defaults for the installed apps
