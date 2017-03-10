@@ -15,3 +15,10 @@ brew tap caskroom/cask
 
 # Install Cask versions for beta version of apps :D
 brew tap caskroom/versions
+
+# Install updated OpenSSL
+brew install openssl
+
+# Install updated cURL w/ OpenSSL
+brew install curl --with-openssl
+brew link --force curl
