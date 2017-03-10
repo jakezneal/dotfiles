@@ -2,8 +2,6 @@
 brew cask install --appdir="/Applications" 1clipboard
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" adobe-creative-cloud
-brew cask install --appdir="/Applications" adobe-illustrator-cc
-brew cask install --appdir="/Applications" adobe-photoshop-cc
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" keka
 brew cask install --appdir="/Applications" logitech-options
