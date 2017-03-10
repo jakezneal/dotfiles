@@ -11,7 +11,7 @@ brew install git
 brew install node
 
 # Install Brew Cask for managing other apps
-brew install caskroom/cask
+brew tap caskroom/cask
 
 # Install Cask versions for beta version of apps :D
 brew tap caskroom/versions
