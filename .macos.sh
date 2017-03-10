@@ -115,6 +115,9 @@ sudo systemsetup -settimezone "Europe/London" > /dev/null
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disable mouse enlargement with jiggle
+defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool true
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
