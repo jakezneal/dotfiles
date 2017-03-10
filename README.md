@@ -45,5 +45,10 @@ bash .init.sh
 bash .apm.sh
 ```
 
+#### To-do
++ Alfred config
++ Further macOS preferences
++ Add additional folders to folder structure
+
 # License
 What license!? [WTFPL](http://www.wtfpl.net).
