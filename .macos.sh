@@ -417,4 +417,19 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+###############################################################################
+# Privacy                                                                     #
+###############################################################################
+
+# Disable Captive Portal Hijacking Attack
+defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+
+# Enable Stealth Mode
+defaults write /Library/Preferences/com.apple.alf stealthenabled -bool true
+
+# Disable wake on network access
+systemsetup -setwakeonnetworkaccess off
+
+# Disable Bonjour multicast advertisements
+defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
 
