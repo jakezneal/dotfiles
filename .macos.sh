@@ -13,6 +13,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
+# Disable annoying UI error sounds
+defaults write com.apple.systemsound com.apple.sound.beep.volume -int 0
+defaults write com.apple.sound.beep feedback -int 0
+defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -int 0
+
 # Menu bar: hide the Time Machine and Volume icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
