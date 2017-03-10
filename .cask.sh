@@ -27,7 +27,6 @@ brew cask install --appdir="/Applications" tower
 # Additional apps
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" post-haste
-brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" transmission
