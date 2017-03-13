@@ -19,6 +19,7 @@ brew cask install --appdir="/Applications" filezilla
 brew cask install --appdir="/Applications" ghostlab
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" mamp
 brew cask install --appdir="/Applications" sequel-pro
 brew cask install --appdir="/Applications" tower
 
