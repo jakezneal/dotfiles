@@ -33,6 +33,9 @@ defaults write com.apple.systemuiserver menuExtras -array \
 # Show battery percentage in menu bar
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# Set the date format in the menu bar
+defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  HH:mm:ss'
+
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
@@ -435,4 +438,3 @@ systemsetup -setwakeonnetworkaccess off
 
 # Disable Bonjour multicast advertisements
 defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
-
