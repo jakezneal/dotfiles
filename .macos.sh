@@ -76,6 +76,9 @@ defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle -str
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
