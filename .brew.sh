@@ -22,3 +22,6 @@ brew install openssl
 # Install updated cURL w/ OpenSSL
 brew install curl --with-openssl
 brew link --force curl
+
+# Install Yarn
+brew install yarn
