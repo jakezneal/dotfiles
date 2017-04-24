@@ -17,6 +17,7 @@ brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" filezilla
 brew cask install --appdir="/Applications" ghostlab
+brew cask install --appdir="/Applications" github-desktop
 brew cask install --appdir="/Applications" imageoptim
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" mamp
