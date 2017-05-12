@@ -25,3 +25,6 @@ brew link --force curl
 
 # Install Yarn
 brew install yarn
+
+# Install GraphicsMagick
+brew install graphicsmagick
