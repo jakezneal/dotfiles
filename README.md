@@ -35,14 +35,14 @@ bash .mkdir.sh
 bash .misc.sh
 ```
 
-#### Finally, set some sensible defaults for the installed apps
-```sh
-bash .init.sh
-```
-
 #### Install Atom theme and packages with [APM](https://github.com/atom/apm)
 ```sh
 bash .apm.sh
+```
+
+#### Finally, set some sensible defaults for the installed apps
+```sh
+bash .init.sh
 ```
 
 #### To-do
