@@ -4,7 +4,6 @@ brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" adobe-creative-cloud
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" keka
-brew cask install --appdir="/Applications" logitech-options
 brew cask install --appdir="/Applications" skyfonts
 
 # Browsers
@@ -31,6 +30,9 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" transmission
 brew cask install --appdir="/Applications" vlc
+
+# Drivers
+brew cask install --appdir="/Applications" logitech-options
 brew cask install --appdir="/Applications" wd-my-cloud
 
 # Cleanup

@@ -16,6 +16,9 @@ brew tap caskroom/cask
 # Install Cask versions for beta version of apps :D
 brew tap caskroom/versions
 
+# Install Brew Drivers
+brew tap caskroom/drivers
+
 # Install updated OpenSSL
 brew install openssl
 
