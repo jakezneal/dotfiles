@@ -1,0 +1,9 @@
+[user]
+    name = Jake Neal
+    email = hello@jakeneal.co.uk
+
+[github]
+    user = jakezneal
+
+[core]
+    excludesfile = ~/.gitignore

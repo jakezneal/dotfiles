@@ -1,0 +1,10 @@
+export EDITOR=nano
+
+export NVM_DIR="$HOME/.nvm"
+
+LOCAL_BIN_EXPORT="/usr/local/bin"
+LOCAL_SBIN_EXPORT="/usr/local/sbin"
+YARN_BIN_EXPORT="$HOME/.config/yarn/global/node_modules/.bin"
+COMPOSER_BIN_EXPORT="$HOME/.composer/vendor/bin"
+
+export PATH="$LOCAL_BIN_EXPORT:$LOCAL_SBIN_EXPORT:$YARN_BIN_EXPORT:$COMPOSER_BIN_EXPORT"
