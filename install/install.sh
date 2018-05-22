@@ -12,6 +12,9 @@ DOTFILES_DIR=~/dotfiles
 # Install Oh My Zsh
 . "$DOTFILES_DIR/install/zsh.sh"
 
+# Install VS Code plugins
+. "$DOTFILES_DIR/install/code.sh"
+
 # Set up symlinks
 . "$DOTFILES_DIR/install/symlinks.sh"
 
