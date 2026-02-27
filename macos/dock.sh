@@ -1,22 +1,22 @@
 #!/bin/sh
 
 apps=(
-    "Astro"
+    "Canary Mail"
+    "Notion Calendar"
     "Slack"
-    "Spotify"
+    "1Password"
+    "ChatGPT"
 
-    "Google Chrome"
-    "Google Chrome Canary"
-    "Firefox"
-    "Safari"
+    "Arc"
+    "Spotify"
+    
+    "Figma"
 
     "Visual Studio Code"
-    "iTerm"
-    "Tower"
+    "Warp"
+    "GitHub Desktop"
     "TablePlus"
-    "Cyberduck"
-
-    "MacDown"
+    "Postman"
 )
 
 dockutil --no-restart --remove all
@@ -25,9 +25,9 @@ for app in "${apps[@]}"; do
     dockutil --no-restart --add "/Applications/${app}.app"
 done;
 
-dockutil --add '' --type spacer --section apps --after "Finder"
-dockutil --add '' --type spacer --section apps --after "Spotify"
-dockutil --add '' --type spacer --section apps --after "Safari"
-dockutil --add '' --type spacer --section apps --after "Cyberduck"
+dockutil --add '' --type spacer --section apps --after "Finder.app"
+dockutil --add '' --type spacer --section apps --after "ChatGPT.app"
+dockutil --add '' --type spacer --section apps --after "Spotify.app"
+dockutil --add '' --type spacer --section apps --after "Figma.app"
 
 killall Dock
