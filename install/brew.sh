@@ -23,7 +23,9 @@ cask=(
     1password
     appcleaner
     arc
+    chatgpt
     dbngin
+    docker-desktop
     figma
     flux-app
     github
