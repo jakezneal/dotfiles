@@ -36,6 +36,7 @@ cask=(
     rectangle
     slack
     spotify
+    starship
     tableplus
     visual-studio-code
     warp
