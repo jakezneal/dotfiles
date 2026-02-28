@@ -11,6 +11,7 @@ brew=(
     mysql
     openssl
     python3
+    starship
     wget
 )
 
@@ -38,7 +39,6 @@ cask=(
     rectangle
     slack
     spotify
-    starship
     tableplus
     visual-studio-code
     warp
