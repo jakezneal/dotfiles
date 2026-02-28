@@ -25,9 +25,10 @@ for app in "${apps[@]}"; do
     dockutil --no-restart --add "/Applications/${app}.app"
 done;
 
-dockutil --add '' --type spacer --section apps --after "Finder.app"
-dockutil --add '' --type spacer --section apps --after "ChatGPT.app"
-dockutil --add '' --type spacer --section apps --after "Spotify.app"
-dockutil --add '' --type spacer --section apps --after "Figma.app"
+dockutil --add '' --type spacer --section apps --after "Finder"
+dockutil --add '' --type spacer --section apps --after "ChatGPT"
+dockutil --add '' --type spacer --section apps --after "Spotify"
+dockutil --add '' --type spacer --section apps --after "Figma"
+dockutil --add '' --type spacer --section apps --after "Postman"
 
 killall Dock
