@@ -47,5 +47,5 @@ cask=(
 
 # Install cask packages
 for package in "${cask[@]}"; do
-    brew cask install --appdir="/Applications" $package
+    brew install --cask --appdir="/Applications" $package
 done;
