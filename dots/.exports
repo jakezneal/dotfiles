@@ -1,10 +1,17 @@
-export EDITOR=nano
+export EDITOR=vim
 
 export NVM_DIR="$HOME/.nvm"
 
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 LOCAL_BIN_EXPORT="/usr/local/bin"
 LOCAL_SBIN_EXPORT="/usr/local/sbin"
-YARN_BIN_EXPORT="$HOME/.config/yarn/global/node_modules/.bin"
 COMPOSER_BIN_EXPORT="$HOME/.composer/vendor/bin"
 
-export PATH="$LOCAL_BIN_EXPORT:$LOCAL_SBIN_EXPORT:$YARN_BIN_EXPORT:$COMPOSER_BIN_EXPORT"
+export PATH="$LOCAL_BIN_EXPORT:$LOCAL_SBIN_EXPORT:$COMPOSER_BIN_EXPORT"
