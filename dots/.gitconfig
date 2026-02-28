@@ -4,6 +4,3 @@
 
 [github]
     user = jakezneal
-
-[core]
-    excludesfile = ~/.gitignore
