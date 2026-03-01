@@ -10,6 +10,7 @@ brew=(
     git
     mysql
     openssl
+    pnpm
     python3
     starship
     wget
