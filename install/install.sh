@@ -7,7 +7,7 @@ DOTFILES_DIR=~/dotfiles
 . "$DOTFILES_DIR/install/symlinks.sh"
 
 # Set up macOS defaults
-. "$DOTFILES_DIR/macos/defaults.sh"
+. "$DOTFILES_DIR/macos/defaults.sh" "$@"
 
 # Set up macOS dock
 . "$DOTFILES_DIR/macos/dock.sh"
