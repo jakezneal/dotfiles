@@ -1,2 +1,22 @@
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# Lazy-load nvm — only initializes when node/npm/nvm/etc. is first used
+_load_nvm() {
+    unset -f nvm node npm npx yarn pnpm
+    [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+}
+
+nvm()  { _load_nvm; nvm  "$@"; }
+node() { _load_nvm; node "$@"; }
+npm()  { _load_nvm; npm  "$@"; }
+npx()  { _load_nvm; npx  "$@"; }
+yarn() { _load_nvm; yarn "$@"; }
+pnpm() { _load_nvm; pnpm "$@"; }
+
+# Auto-switch node version when entering a directory with .nvmrc
+_nvm_auto_use() {
+    if [[ -f ".nvmrc" ]]; then
+        _load_nvm
+        nvm use --silent
+    fi
+}
+add-zsh-hook chpwd _nvm_auto_use
