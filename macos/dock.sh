@@ -30,21 +30,21 @@ development=(
     "Bruno"
 )
 
-GROUPS=("productivity" "misc" "design" "development")
+DOCK_GROUPS=("productivity" "misc" "design" "development")
 
 ###############################################################################
 # Build Dock
 ###############################################################################
 dockutil --no-restart --remove all
 
-group_count=${#GROUPS[@]}
+group_count=${#DOCK_GROUPS[@]}
 group_idx=0
 
-for group_name in "${GROUPS[@]}"; do
+for group_name in "${DOCK_GROUPS[@]}"; do
     group_idx=$(( group_idx + 1 ))
     group_added=0
     group_last=""
-    eval 'local apps=("${'"$group_name"'[@]}")'
+    eval 'apps=("${'"$group_name"'[@]}")'
 
     for app in "${apps[@]}"; do
         if [[ -d "/Applications/${app}.app" ]]; then

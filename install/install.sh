@@ -213,7 +213,7 @@ esac
 
 if [[ "$DEFAULTS_CHOICE" != "Skip" ]]; then
     [[ "$DRY_RUN" -eq 1 ]] && defaults_args+=(--dry-run)
-    . "$DOTFILES_DIR/macos/defaults.sh" "${defaults_args[@]}"
+    . "$DOTFILES_DIR/macos/defaults.sh" ${defaults_args[@]+"${defaults_args[@]}"}
 fi
 
 ###############################################################################
