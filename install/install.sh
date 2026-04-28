@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTFILES_DIR=~/Code/jake/dotfiles
+DOTFILES_DIR=~/dotfiles
 
 ###############################################################################
 # Flags
